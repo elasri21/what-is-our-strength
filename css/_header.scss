@@ -1,0 +1,102 @@
+/* start header rules*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 79px;
+    z-index: 1111;
+    border-bottom: 1px solid $eee;
+    @media (min-width: 768px) {
+        padding: 15px 50px !important;
+        nav {
+            display: block !important;
+            ul {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+            }
+            .close {
+                display: none;
+            }
+        }
+        .menu {
+            display: none;
+        }
+        .close {
+            display: none !important;
+        }
+    }
+    @media (max-width: 767px) {
+        nav {
+            position: absolute;
+            top: 79px;
+            left: 0;
+            right: 0;
+            padding: 50px;
+            background-color: white;
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid $text-c;
+                    &:last-child {
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+                    a {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    .logo {
+        a {
+            font-size: 40px;
+            color: $title-c;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+    }
+    nav {
+        display: none;
+        ul {
+            li {
+                a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: $text-c;
+                    &:hover {
+                        color: $hover-state;
+                    }
+                }
+            }
+        }
+    }
+    .menu {
+        i {
+            cursor: pointer;
+            font-size: 30px;
+            color: $title-c;
+        }
+    }
+    .close {
+        display: none;
+        i {
+            cursor: pointer;
+            font-size: 30px;
+            color: $title-c;
+        }
+    }
+}
+/* end header rules*/

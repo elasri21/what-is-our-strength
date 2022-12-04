@@ -1,0 +1,31 @@
+/* start footer rules*/
+footer {
+    background-color: $text-c;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        p {
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        a {
+            font-size: 18px;
+            color: $grey;
+            font-weight: 600;
+            text-transform: capitalize;
+            transition: $trans;
+            &:hover {
+                color: $hover-state;
+                opacity: .7;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* start footer rules*/

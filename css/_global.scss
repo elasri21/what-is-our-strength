@@ -1,0 +1,45 @@
+/* start global rulles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: $family;
+    background-color: $eee;
+}
+ul {
+    margin: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    transition: $trans;
+}
+button,
+input {
+    border: none;
+    background: none;
+    outline: none;
+    transition: $trans;
+}
+.container {
+    @media (min-width: 922px) {
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+    @media (min-width: 768px) and (max-width: 921px) {
+        margin-left: 40px !important;
+        margin-right: 40px !important;
+    }
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* end global rulles */
